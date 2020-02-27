@@ -20,16 +20,3 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
-
-
-// app.get('/', function(req, res) {
-//     //about sql
-//     connection.query("SELECT * FROM bursgers_db", function(error, rows, fields) {
-//         if (!!err) {
-//             console.log("Error with the mysql query");
-//         }
-//         else console.log("Success with mysql query");
-//         // parse with your rows/fields
-//     });
-// })
-

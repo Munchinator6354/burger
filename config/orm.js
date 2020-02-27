@@ -1,11 +1,13 @@
 var connection = require("./connection.js")
 
 var orm = {
-    selectAll: function (tableInput) {
-        var queryString = "SELECT * FROM ??";
-        connection.query(queryString, [tableInput], function (err, result) {
-            if (err) throw err;
-            console.log(result);
+    all: function (tableInput, cb) {
+        var queryString = "SELECT * FROM " + tableInput + ";";
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
         });
     }
 
@@ -13,7 +15,6 @@ var orm = {
     // updateOne()
 
 };
-
 
 
 
