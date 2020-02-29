@@ -3,11 +3,11 @@ var mysql = require("mysql");
 var app = express;
 
 var connection = mysql.createConnection({
-    host: 'tkck4yllxdrw0bhi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    host: 'localhost',
     port: 3306,
-    user: 'i0ch8qpvagjnvqba',
-    password: 's367nvthu5gaesqk',
-    database: 'dg88kdxu6zayvopl'
+    user: 'root',
+    password: '123456789',
+    database: 'burgers_db'
 });
 
 connection.connect(function(err) {
