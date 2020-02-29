@@ -2,6 +2,7 @@ body {
     width: 99%;
     height: 900px;
     background-color: #fc6;
+    text-align: center;
   }
   
   #top-bar {
@@ -19,6 +20,9 @@ body {
     margin: 0;
     list-style-type: none;
     border: 0;
+  }
+  ul {
+    list-style-type: none;
   }
   
   @media (min-width: 1200px) {
@@ -67,3 +71,7 @@ body {
     color: #f30;
   }
   
+  img {
+    width: 420px;
+    height: 400px;
+  }
